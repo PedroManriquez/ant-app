@@ -1,8 +1,8 @@
 import React from 'react';
 import { Layout, Breadcrumb } from 'antd';
 import UIComponent from './components/'
-import logo from './assets/img/logo.svg';
 import './assets/sass/main.scss';
+import RouterView from './router/Router'
 
 const { Content } = Layout;
 const { AppHeader, AppSideNav, AppFooter } = UIComponent;
@@ -20,7 +20,7 @@ class SiderDemo extends React.Component {
               <Breadcrumb.Item>Bill</Breadcrumb.Item>
             </Breadcrumb>
             <div className="app-content">
-              <img src={logo} alt="react logo" className="react-logo"/>
+              <RouterView />
             </div>
           </Content>
           <AppFooter />
